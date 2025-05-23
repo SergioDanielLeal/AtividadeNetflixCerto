@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_Capa"
+        android:layout_width="0dp"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/transformersfundo" />
+
+    <ImageView
+        android:id="@+id/imageView_logoNetflix"
+        android:layout_width="40dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Series"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView_Series"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/s_ries"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_logoNetflix"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Filmes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_logoNetflix"
+        app:layout_constraintTop_toTopOf="@+id/imageView_logoNetflix"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_Filmes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filmes"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Series"
+        app:layout_constraintEnd_toStartOf="@+id/textView_MinhaLista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_Series"
+        app:layout_constraintTop_toTopOf="@+id/textView_Series"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_MinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minha_lista"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Filmes"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_Filmes"
+        app:layout_constraintTop_toTopOf="@+id/textView_Filmes"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageView_logofilme"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        app:srcCompat="@drawable/transformers" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <TextView
+        android:id="@+id/textView_caracteristica1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/a_o"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_caracteristica2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/guidelineBottom"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_caracteristica2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/velicidade"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_caracteristica1"
+        app:layout_constraintEnd_toStartOf="@+id/textView_caracteristica3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_caracteristica1"
+        app:layout_constraintTop_toTopOf="@+id/textView_caracteristica1"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_caracteristica3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aventura"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_caracteristica2"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView_caracteristica2"
+        app:layout_constraintTop_toTopOf="@+id/textView_caracteristica2"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+    <Button
+        android:id="@+id/button_Assistir"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/baseline_arrow_right_24"
+        android:text="@string/assitir"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintEnd_toStartOf="@+id/button_detalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_minhaLista"
+        app:layout_constraintTop_toBottomOf="@id/textView_caracteristica2" />
+
+    <Button
+        android:id="@+id/button_minhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/baseline_add_24"
+        android:padding="0dp"
+        android:text="@string/minha_lista2"
+        app:layout_constraintBottom_toBottomOf="@+id/button_Assistir"
+        app:layout_constraintEnd_toStartOf="@+id/button_Assistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/button_Assistir"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/button_detalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/info"
+        android:padding="0dp"
+        android:text="@string/detalhes"
+        app:layout_constraintBottom_toBottomOf="@+id/button_Assistir"
+        app:layout_constraintEnd_toEndOf="@id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/button_Assistir"
+        app:layout_constraintTop_toTopOf="@+id/button_Assistir"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView_lancamentos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:text="@string/lan_amento"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintStart_toStartOf="@id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/button_Assistir"
+        android:textStyle=""/>
+
+    <ImageView
+        android:id="@+id/imageView_filme1"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_filme2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_filme2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_filme2"
+        app:srcCompat="@drawable/starwars"
+        />
+
+    <ImageView
+        android:id="@+id/imageView_filme2"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_filme3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_filme1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_lancamentos"
+        app:srcCompat="@drawable/resgate" />
+
+    <ImageView
+        android:id="@+id/imageView_filme3"
+        android:layout_width="85dp"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_filme2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView_filme2"
+        app:layout_constraintTop_toTopOf="@+id/imageView_filme2"
+        app:srcCompat="@drawable/harrypotter" />
+
+    <TextView
+        android:id="@+id/textView_Nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="Sérgio Daniel Camponez Leal"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

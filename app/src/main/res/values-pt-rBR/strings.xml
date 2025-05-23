@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exercicio3</string>
+    <string name="s_ries">Séries</string>
+    <string name="filmes">Filmes</string>
+    <string name="minha_lista">Minha lista</string>
+    <string name="a_o">Ação</string>
+    <string name="velicidade">Velicidade</string>
+    <string name="aventura">Aventura</string>
+    <string name="minha_lista2">MINHA LISTA</string>
+    <string name="detalhes">DETALHES</string>
+    <string name="lan_amento">Lançamento</string>
+    <string name="assitir">Assitir</string>
+</resources>
